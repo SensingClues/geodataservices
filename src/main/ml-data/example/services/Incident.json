@@ -1,0 +1,55 @@
+{
+  "info" : {
+    "name" : "Incident",
+    "description" : "Sensing Clues Incident data."
+  },
+
+  "search": {
+    "Articles": {
+      "options": "example-incident-options",
+      "geometryType": "Point",
+      "geoConstraint": "Location",
+      "values": "points",
+      "docTransform": "example-incident-transform",
+      "schema": "Geodataservices",
+      "view": "Incident"
+    }
+  },
+
+  "layers" : [
+    {
+      "id": 0,
+      "name" : "Incident",
+      "decription": "Sensing Clues Incident data.",
+      "geometryType": "Point",
+      "idField": "OBJECTID",
+      "displayField": "Species",
+      "geometryPath": "/geometry",
+      "extent" : {
+        "xmin" : -180,
+        "ymin" : -90,
+        "xmax" : 180,
+        "ymax" : 90,
+        "spatialReference" : {
+          "wkid" : 4326,
+          "latestWkid" : 4326
+        }
+      },
+      "schema": "Geodataservices",
+      "view" : "Incident",
+      "boundingQuery" : {
+        "jsonPropertyValueQuery" : {
+          "property" : ["geores"], "value" : [ 1 ],
+          "options" : ["lang=en"], "weight" : 0
+        }
+      },
+      "readOnly": true,
+      "geometry" : {
+        "type" : "Point",
+        "format" : "geojson",
+        "coordinateSystem" : "wgs84",
+        "xpath" : "//geometry"
+      }
+    }
+  ]
+}
