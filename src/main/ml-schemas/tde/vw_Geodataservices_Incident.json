@@ -84,7 +84,7 @@
               "invalidValues":"ignore"
             },
             {
-              "name":"geo",
+              "name":"geometry",
               "scalarType":"string",
               "val": "fn:concat('POINT (',*:Latitude,', ',*:Longitude,')')",
               "nullable":true,
