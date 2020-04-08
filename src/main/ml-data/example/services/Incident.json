@@ -37,18 +37,12 @@
       },
       "schema": "Geodataservices",
       "view" : "Incident",
-      "boundingQuery" : {
-        "jsonPropertyValueQuery" : {
-          "property" : ["geores"], "value" : [ 1 ],
-          "options" : ["lang=en"], "weight" : 0
-        }
-      },
       "readOnly": true,
       "geometry" : {
         "type" : "Point",
         "format" : "geojson",
         "coordinateSystem" : "wgs84",
-        "xpath" : "//geometry"
+        "source" : {"column":"geometry"}
       }
     }
   ]
