@@ -93,7 +93,7 @@
             {
               "name":"OBJECTID",
               "scalarType":"long",
-              "val": "fn:concat('90000',*:ID)",
+              "val": 10000000+xdmp:random(10000000),
               "nullable":true,
               "invalidValues":"ignore"
             }

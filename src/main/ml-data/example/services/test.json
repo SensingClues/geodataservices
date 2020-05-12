@@ -1,0 +1,79 @@
+{
+"info": {
+"name": "Incident", 
+"description": "Sensing Clues Incident data."
+}, 
+"search": {
+"Articles": {
+"options": "example-incident-options", 
+"geometryType": "Point", 
+"geoConstraint": "Location", 
+"values": "points", 
+"docTransform": "example-incident-transform", 
+"schema": "Geodataservices", 
+"view": "Incident"
+}
+}, 
+"layers": [
+{
+"id": 0, 
+"name": "Incident", 
+"decription": "Sensing Clues Incident data.", 
+"geometryType": "Point", 
+"idField": "OBJECTID", 
+"displayField": "Species", 
+"geometryPath": "/geometry", 
+"extent": {
+"xmin": -180, 
+"ymin": -90, 
+"xmax": 180, 
+"ymax": 90, 
+"spatialReference": {
+"wkid": 4326, 
+"latestWkid": 4326
+}
+}, 
+"schema": "Geodataservices", 
+"view": "Incident", 
+"readOnly": true, 
+"geometry": {
+"type": "Point", 
+"format": "geojson", 
+"coordinateSystem": "wgs84", 
+"source": {
+"column": "geometry"
+}
+}
+},
+{
+"id": 1, 
+"name": "projectSLORA", 
+"decription": "Sensing Clues projectSLORA data.", 
+"geometryType": "Point", 
+"idField": "OBJECTID", 
+"displayField": "IncidentText", 
+"geometryPath": "/geometry", 
+"extent": {
+"xmin": -180, 
+"ymin": -90, 
+"xmax": 180, 
+"ymax": 90, 
+"spatialReference": {
+"wkid": 4326, 
+"latestWkid": 4326
+}
+}, 
+"schema": "Geodataservices", 
+"view": "projectSLORA", 
+"readOnly": true, 
+"geometry": {
+"type": "Point", 
+"format": "geojson", 
+"coordinateSystem": "wgs84", 
+"source": {
+"column": "geometry"
+}
+}
+}
+]
+}
